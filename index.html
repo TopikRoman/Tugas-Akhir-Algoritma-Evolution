@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Genetic Algorithm Gizi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sistem Rekomendasi Menu Gizi (Genetic Algorithm)</h1>
+
+      <div class="card">
+        <h2>Input Data Pengguna</h2>
+
+        <label>Umur</label>
+        <input type="number" id="umur" />
+
+        <label>Jenis Kelamin</label>
+        <select id="jk">
+          <option value="laki-laki">Laki-laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select>
+
+        <label>Berat Badan (kg)</label>
+        <input type="number" id="bb" />
+
+        <label>Tinggi Badan (cm)</label>
+        <input type="number" id="tb" />
+
+        <label>Aktivitas</label>
+        <select id="aktivitas">
+          <option value="sangat ringan">Sangat Ringan</option>
+          <option value="ringan">Ringan</option>
+          <option value="sedang">Sedang</option>
+          <option value="berat">Berat</option>
+        </select>
+
+        <button onclick="proses()">Jalankan Genetic Algorithm</button>
+      </div>
+
+      <div class="card" id="hasil"></div>
+
+      <div class="card">
+        <h2>Proses Genetic Algorithm</h2>
+        <div id="log"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
